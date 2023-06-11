@@ -9,5 +9,24 @@
     "frameworksBackend": {
       "region": "europe-west1"
     }
-  }
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5002
+    },
+    "ui": {
+      "enabled": true,
+      "port": 5001
+    },
+    "singleProjectMode": true,
+    "auth": {
+      "port": 9099
+    },
+    "firestore": {
+      "port": 8080
+    }
+  },
+  "predeploy": [
+    "npm run build"
+  ]
 }
